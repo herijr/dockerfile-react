@@ -14,7 +14,7 @@ RUN yarn install
 
 COPY . .
 
-RUN yarn build
+RUN npm run build --base-href='http://localhost'
 
 FROM nginx:latest
 
